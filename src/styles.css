@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+p,
+h1,
+h2,
+input,
+textarea {
+  font-family: "Roboto";
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }

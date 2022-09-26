@@ -1,1 +1,6 @@
-<p>output works!</p>
+<div class="output-container">
+  <code class="output" #value (click)="onSnippetFocus(value)">
+    {{ placeholder }}
+  </code>
+  <button (click)="copySnippet(value)" class="copy-btn">Copy snippet</button>
+</div>
