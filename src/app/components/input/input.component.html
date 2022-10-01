@@ -1,0 +1,15 @@
+<form [formGroup]="form" class="input-container">
+  <div class="settings-container">
+    <input
+      formControlName="prefix"
+      class="prefix settings"
+      placeholder="Type prefix..."
+    />
+    <input
+      formControlName="description"
+      class="description settings"
+      placeholder="Type description"
+    />
+  </div>
+  <textarea formControlName="code" class="input"></textarea>
+</form>
