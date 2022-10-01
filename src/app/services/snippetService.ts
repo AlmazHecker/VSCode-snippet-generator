@@ -17,7 +17,13 @@ export interface CodeSnippet {
   providedIn: 'root',
 })
 export class SnippetService {
-  value: string = '';
+  value: string = `"":{
+    "prefix": "",
+    "body": [
+        ""
+    ],
+    "description": ""
+} `;
 
   constructor(private codeService: CodeService) {}
 

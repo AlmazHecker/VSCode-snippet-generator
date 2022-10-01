@@ -13,7 +13,6 @@ export class CodeService {
       body: snippet.code.split('\n'),
       description: snippet.description,
     };
-    console.log(codeSnippet);
 
     return `"":${JSON.stringify(codeSnippet, null, 4)}`;
   }

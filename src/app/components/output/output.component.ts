@@ -13,30 +13,6 @@ export class OutputComponent implements OnInit {
     public snippetService: SnippetService
   ) {}
 
-  placeholderObject = {
-    prefix: '',
-    body: [
-      "import React from 'react'",
-      "import PropTypes from 'prop-types'",
-      "import styled from '@emotion/styled'",
-      '',
-      'const Announcements = () => {',
-      '   return <Container>Announcements</Container>',
-      '}',
-      '',
-      'export default Announcements',
-      '',
-      'Announcements.propTypes = {}',
-      'Announcements.defaultProps = {}',
-      '',
-      "const Container = styled('div')``",
-      '',
-    ],
-    description: '',
-  };
-
-  placeholder = `"":${JSON.stringify(this.placeholderObject, null, 4)}`;
-
   copySnippet(snippet: HTMLElement) {
     this.clipboardService.selectNode(snippet);
     this.clipboardService.copyToClipboard(snippet);
