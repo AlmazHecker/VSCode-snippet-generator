@@ -1,6 +1,9 @@
 <div class="output-container">
   <code class="output" #value (click)="onSnippetFocus(value)">
-    {{ placeholder }}
+    {{ snippetService.value }}
   </code>
+  <!-- <h1>
+    {{  }}
+  </h1> -->
   <button (click)="copySnippet(value)" class="copy-btn">Copy snippet</button>
 </div>

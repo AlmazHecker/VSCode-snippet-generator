@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './components/input/input.component';
 import { OutputComponent } from './components/output/output.component';
 import { MainComponent } from './components/main/main.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, InputComponent, OutputComponent, MainComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClipboardService } from 'src/app/services/clipboardService';
+import { SnippetService } from 'src/app/services/snippetService';
 
 @Component({
   selector: 'app-output',
@@ -7,7 +8,10 @@ import { ClipboardService } from 'src/app/services/clipboardService';
   styleUrls: ['./output.component.css'],
 })
 export class OutputComponent implements OnInit {
-  constructor(public clipboardService: ClipboardService) {}
+  constructor(
+    public clipboardService: ClipboardService,
+    public snippetService: SnippetService
+  ) {}
 
   placeholderObject = {
     prefix: '',
